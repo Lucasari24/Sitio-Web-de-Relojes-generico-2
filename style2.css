@@ -11,7 +11,6 @@ body {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(0 0)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='rotate(0 800 450)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(0 0)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(0 0)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='rotate(0 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='rotate(0 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: cover;
-	font-family: 'Courier New', Courier, monospace;
 }
 
 header {
@@ -64,22 +63,22 @@ nav {
 	background-color: rgba(10, 20, 30, 1.0);
 }
 
-li {
+.li-nav {
 	list-style: none;
 	padding: 15px 0;
 	transition-duration: .5s;
 	margin: 0 1.5em;
 	width: 120px;
 	text-align: center;
-	align-self: center;
+	font-weight: bold;
 }
 
-li a {
+.li-nav a {
 	color: #fff;
 	text-decoration: none;
 }
 
-li:hover {
+.li-nav:hover {
 	background-color: #0FA9B6;
 	transform: scale(1.3);
 	border-top-right-radius: 200px;
@@ -97,21 +96,34 @@ section {
 article {
     margin: 2em auto;
     width: 70%;
-    height: 300px;
+    height: 23em;
     display: flex;
     flex-direction: column;
     border: 3px solid #142D68;
     box-shadow: 2px 2px 10px 2px #142D68;
     border-radius: 10px;
+    background-color: #f2f2f2;
 }
 
-#article2-container h2{
-    position: absolute;
+#article1-container h2,
+#article2-container h2,
+#article3-container h2{
+    position: relative;
     align-self: center;
-    margin: 2em 0;
+    margin: 0 auto;
     font-size: 2em;
     color: #fff;
 }
+
+#article1-container p,
+#article2-container p,
+#article3-container p {
+	padding: 1em 1em;
+	justify-content: initial;
+	font-size: 1.04em;
+.
+
+-nav}
 
 .imagen1 {
     background: linear-gradient(
@@ -123,4 +135,135 @@ article {
     background-size: cover;
     background-position: center;
     height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen2 {
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    )
+    , url(nacimientoempresa.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+.imagen3 {
+    background: linear-gradient(
+        0deg,
+        rgba(0,0,0,.5),
+        rgba(0,0,0,.5)
+    )
+    , url(valores.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+}
+
+#article3-container h3 {
+	text-align: center;
+}
+
+#article3-container .ol-val {
+	padding: .5em 3em 1em ;
+}
+
+hr {
+	height: .5em;
+	width: 600px;
+	margin: 0 auto;
+	background-color: #f5c7f5;
+	box-shadow: 2px 2px 10px 2px #000;
+	
+}
+
+footer {
+	display: flex;
+	width: 100%;
+	height: 40vh;
+	margin-top: 2em;
+	background-color: rgba(10, 20, 30, 1.0);
+}
+
+footer h2 {
+	color: #f2f2f2;
+	font-weight: 700;
+	text-align: center;
+	padding: 3em 0 0;
+	font-size: 1.5em;
+}
+
+.cuentas {
+	width: 50%;
+}
+
+.iconos {
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 2em auto;
+	text-align: center;
+}
+
+.iconos i {
+	color: #fff;
+	font-size: 2em;
+	background-color: #74008d33;
+	padding: 10px;
+	border-radius: 20%;
+	box-shadow: .5px .5px 25px .5px #74008d55 ;
+}
+
+.iconos i:hover {
+	color: #D01956;
+	text-shadow: 1px 1px 15px #D01956;
+	transform: scale(1.3);
+}
+
+.contactame {
+	width: 40%;
+	height: 150px;
+	background: linear-gradient(
+		0deg,
+		rgba(0, 0, 0, .5),
+		rgba(0, 0, 0, .5)
+	)
+	, url(./correo.jpg);
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	align-self: center;
+	border-radius: 20px;
+	margin: 0 2em;
+	transition-duration: 1s;
+}
+
+.contactame:hover {
+	background-position: top;
+}
+
+.contactame a {
+	display: flex;
+	color: #f2f2f2;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 2em;
+	text-shadow: 2px 2px 10px #020202;
+	flex-direction: row;
+	height: 100%;
+	align-items: center;
+	justify-content: center;
+	transition-duration: 1s;
+}
+
+.contactame a:hover {
+	transform: scale(1.2) translateY(20px) skewY(-2deg);
 }
