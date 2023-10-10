@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,11 +9,14 @@
 
 body {
 	background-color: #f4f6f4;
+	font-family: 'Poppins', sans-serif;
+
 }
 
 header {
 	width: 100%;
 	height: 500px;
+	font-family: 'Mooli', sans-serif;
 }
 
 .fondo_container {
@@ -64,6 +70,7 @@ li {
 	margin: 0 1.5em;
 	width: 120px;
 	text-align: center;
+	font-weight: bold;
 }
 
 li a {
@@ -78,9 +85,6 @@ li:hover {
 	border-bottom-left-radius: 200px;
 }
 
-section {
-}
-
 section h2 {
 	text-align: center;
 	padding: 1em 0;
@@ -89,16 +93,17 @@ section h2 {
 
 .article_container {
 	display: flex;
-	height: 300px;
+	height: 400px;
 	width: 100%;
 	justify-content: space-evenly;
 	flex-direction: row;
 	margin-top: 3em;
+	margin-bottom: 5em;
 }
 
 article {
 	width: 25%;
-	height: 250px;
+	height: 280px;
 	background: linear-gradient(
 	0deg,
 	rgba(244, 246, 244, .75),
@@ -123,7 +128,7 @@ article {
 
 article h3 {
 	color: #174D7E;
-	font-size: 1.10rem;
+	font-size: 1rem;
 	text-align: center;
 	padding: 10px 10px;
 	text-transform: uppercase;
@@ -134,11 +139,35 @@ article p {
 	display: flex;
 	flex-direction: row;
 	align-content: flex-end;
-	padding: 15px 20px;
+	padding: 1em 1.2em;
 	text-align: left;
 	color: #062038;
 	font-weight: bold;
 }
+
+article button {
+	position: absolute;
+	margin: 4em 0;
+	width: 25%;
+	height: 3em;
+	font-size: 1em;
+	font-weight: bold;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	color: #f2f2f2;
+	text-shadow: 3px 3px 4px #000;
+	background-color: #E5106C;
+	border-radius: 10px;
+	transition-duration: .5s;
+}
+
+article button:hover {
+	color: #f4f4f4;
+	text-shadow: 3px 3px 4px #E5106C;
+	background-color: #FF006E;
+	box-shadow: 3px 3px 30px 3px #FF006E;
+}
+
 
 footer {
 	display: flex;
@@ -178,6 +207,12 @@ footer h2 {
 	box-shadow: .5px .5px 25px .5px #74008d55 ;
 }
 
+.iconos i:hover {
+	color: #D01956;
+	text-shadow: 1px 1px 15px #D01956;
+	transform: scale(1.3);
+}
+
 .contactame {
 	width: 40%;
 	height: 150px;
@@ -193,6 +228,11 @@ footer h2 {
 	align-self: center;
 	border-radius: 20px;
 	margin: 0 2em;
+	transition-duration: 1s;
+}
+
+.contactame:hover {
+	background-position: top;
 }
 
 .contactame a {
@@ -206,4 +246,9 @@ footer h2 {
 	height: 100%;
 	align-items: center;
 	justify-content: center;
+	transition-duration: 1s;
+}
+
+.contactame a:hover {
+	transform: scale(1.2) translateY(20px) skewY(-2deg);
 }
